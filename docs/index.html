@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2e9">
+  <meta name="description" content="IQUEST studies how information-seeking questions vary across cultures—and whether language models preserve that diversity.">
+  <title>IQUEST — Curiosity across cultures</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="IQUEST home">
+      <span class="brand-mark" aria-hidden="true">?</span>
+      <span>IQUEST</span>
+    </a>
+    <nav aria-label="Page sections">
+      <a href="#why">Why</a>
+      <a href="#framework">Framework</a>
+      <a href="#findings">Findings</a>
+      <a href="#impact">Impact</a>
+    </nav>
+    <div class="header-links" aria-label="Project links">
+      <a href="assets/paper.pdf">Paper</a>
+      <a href="https://github.com/MichiganNLP/CUEST">Code</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy reveal">
+        <div class="acceptance"><span></span> Accepted to AACL 2026 · Main Conference</div>
+        <p class="kicker">Information-seeking across societies</p>
+        <h1>The curious case of <em>curiosity</em> across cultures.</h1>
+        <p class="dek">We evaluate whether language models ask questions like people do across cultures—and find that today’s models compress a diverse world of curiosity into a narrower, more Western pattern.</p>
+        <div class="authors" aria-label="Authors">
+          <span>Angana Borah<sup>1</sup></span>
+          <span>Zhijing Jin<sup>2,3,4</sup></span>
+          <span>Rada Mihalcea<sup>1</sup></span>
+        </div>
+        <p class="affiliations"><sup>1</sup>University of Michigan · <sup>2</sup>University of Toronto · <sup>3</sup>Vector Institute · <sup>4</sup>MPI for Intelligent Systems</p>
+        <div class="cta-row">
+          <a class="button button-dark" href="assets/paper.pdf">Read the paper <span aria-hidden="true">↗</span></a>
+          <a class="button button-light" href="https://github.com/MichiganNLP/CUEST">View the code <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+
+      <div class="question-world reveal" aria-label="Illustration of questions across cultures">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="center-question">?</div>
+        <article class="question-card q-one">
+          <span>Argentina · society &amp; culture</span>
+          <p>What are the 15 most famous nations on earth as of today?</p>
+        </article>
+        <article class="question-card q-two">
+          <span>India · environment</span>
+          <p>Do you care for the environment?</p>
+        </article>
+        <article class="question-card q-three">
+          <span>Italy · belief</span>
+          <p>Where did the Trinity come from? I don't see it in the Bible.</p>
+        </article>
+        <article class="question-card q-four">
+          <span>Philippines · identity</span>
+          <p>Why do people have misconceptions about our culture?</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="numbers" aria-label="Study at a glance">
+      <div><strong>18</strong><span>countries</span></div>
+      <div><strong>16</strong><span>topics</span></div>
+      <div><strong>6</strong><span>language models</span></div>
+      <div><strong>3</strong><span>cultural benchmarks</span></div>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="section-label">01 · Why this work</div>
+      <div class="why-grid">
+        <div class="section-copy reveal">
+          <h2>Intelligence is not only about having answers.</h2>
+          <p class="lead">It is also about knowing what to ask.</p>
+        </div>
+        <div class="why-body reveal">
+          <p>Questions reveal what people notice, what they consider uncertain, and which paths they choose to explore. Those habits are shaped by culture, social norms, and education.</p>
+          <p>Yet most cultural evaluations of LLMs test answers. That misses the step before an answer: whether a model seeks the right context—or silently fills the gap with its own default assumptions.</p>
+          <div class="contrast" aria-label="Answering versus asking comparison">
+            <div>
+              <span class="contrast-icon">→</span>
+              <small>Most benchmarks ask</small>
+              <strong>Does the model know?</strong>
+            </div>
+            <div class="contrast-accent">
+              <span class="contrast-icon">?</span>
+              <small>We ask instead</small>
+              <strong>What does the model seek?</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section framework" id="framework">
+      <div class="section-label">02 · The framework</div>
+      <div class="framework-head reveal">
+        <div>
+          <p class="kicker">IQUEST</p>
+          <h2>Three views of how humans and models ask.</h2>
+        </div>
+        <p>IQUEST—Information-seeking QUestion Evaluation across SocieTies—compares human-authored questions with culturally prompted model questions.</p>
+      </div>
+      <div class="framework-cards">
+        <article class="framework-card reveal">
+          <span class="card-number">01</span>
+          <div class="mini-viz words" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <h3>How questions are phrased</h3>
+          <p>Compare ambiguity, rhetorical devices, open-endedness, and cohesion.</p>
+          <span class="card-tag">Linguistic style</span>
+        </article>
+        <article class="framework-card reveal">
+          <span class="card-number">02</span>
+          <div class="mini-viz ranks" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <h3>What people choose to ask about</h3>
+          <p>Compare country-level rankings across shared topics, from family to politics.</p>
+          <span class="card-tag">Topic preference</span>
+        </article>
+        <article class="framework-card reveal">
+          <span class="card-number">03</span>
+          <div class="mini-viz compass" aria-hidden="true"><i></i></div>
+          <h3>What the patterns mean</h3>
+          <p>Ground the differences in cultural values, context, and education systems.</p>
+          <span class="card-tag">Social science</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section findings" id="findings">
+      <div class="section-label">03 · What we find</div>
+      <div class="findings-intro reveal">
+        <p class="kicker">The central finding</p>
+        <h2>Models flatten cultural diversity.</h2>
+        <p>Human question-asking patterns vary more across countries. Model questions cluster more tightly and align most closely with patterns expressed in Western countries.</p>
+      </div>
+
+      <div class="plot-grid">
+        <figure class="plot-card reveal">
+          <figcaption>
+            <span>Cross-country variation</span>
+            <strong>Humans vary 2.7× more</strong>
+            <small>Standard deviation across countries; higher means more cross-cultural variation.</small>
+          </figcaption>
+          <div class="bar-plot" role="img" aria-label="Humans standard deviation 0.0785; language models 0.029">
+            <div class="axis-labels"><span>0</span><span>.02</span><span>.04</span><span>.06</span><span>.08</span></div>
+            <div class="bar-row"><span>Humans</span><div class="bar-track"><i class="bar human" style="--value:98.125%"></i></div><b>0.0785</b></div>
+            <div class="bar-row"><span>LLMs</span><div class="bar-track"><i class="bar model" style="--value:36.25%"></i></div><b>0.0290</b></div>
+          </div>
+          <p class="plot-note">The narrower model spread is evidence of cultural flattening—not cultural universality.</p>
+        </figure>
+
+        <figure class="plot-card plot-dark reveal">
+          <figcaption>
+            <span>After adaptation</span>
+            <strong>43% smaller alignment gap</strong>
+            <small>Macro-average distance from human linguistic patterns; lower is better.</small>
+          </figcaption>
+          <div class="gap-plot" role="img" aria-label="Baseline human-model distance 0.256; after fine-tuning 0.146, a 42.8 percent reduction">
+            <div class="gap-column"><b>0.256</b><i style="--height:100%"></i><span>Baseline</span></div>
+            <div class="gap-arrow"><strong>−42.8%</strong><span>gap</span></div>
+            <div class="gap-column accent"><b>0.146</b><i style="--height:57%"></i><span>Fine-tuned</span></div>
+          </div>
+          <p class="plot-note">Adapter-based training closes much of the gap while preserving the base model’s flexibility.</p>
+        </figure>
+      </div>
+
+      <div class="takeaways reveal">
+        <article><span>01</span><h3>Humans are more diverse</h3><p>People’s questions show more variation in style across countries than model-generated questions.</p></article>
+        <article><span>02</span><h3>Content and style differ</h3><p>Models diverge from humans in both how they phrase questions and which topics they prioritize.</p></article>
+        <article><span>03</span><h3>Prompts are not enough</h3><p>Cultural personas help, but do not fully reproduce country-specific information-seeking patterns.</p></article>
+      </div>
+    </section>
+
+    <section class="section impact" id="impact">
+      <div class="section-label">04 · Why it matters</div>
+      <div class="impact-grid">
+        <div class="impact-copy reveal">
+          <p class="kicker">From curiosity to capability</p>
+          <h2>Better questions lead to better cultural reasoning.</h2>
+          <p>When models ask brief follow-up questions before deciding, accuracy improves across three different cultural tasks. Information-seeking helps a model pause, recover missing context, and avoid defaulting to a familiar assumption.</p>
+          <blockquote>Culture-aware systems should not merely memorize more facts. They should learn when—and how—to ask.</blockquote>
+        </div>
+
+        <figure class="impact-chart reveal">
+          <figcaption>
+            <strong>Accuracy on downstream cultural benchmarks</strong>
+            <span>Base model vs. best information-seeking result</span>
+          </figcaption>
+          <div class="legend"><span><i class="base-key"></i>Direct answer</span><span><i class="ask-key"></i>Information-seeking</span></div>
+          <div class="grouped-bars" role="img" aria-label="NormAd accuracy improves from 70.48 to 78.8 percent; CulturalBench from 64.71 to 68.21 percent; Cultural Commonsense from 48.48 to 57.16 percent">
+            <div class="benchmark">
+              <div class="bars"><i class="base" style="--height:70.48%"><b>70.5</b></i><i class="ask" style="--height:78.8%"><b>78.8</b></i></div>
+              <span>NormAd</span>
+            </div>
+            <div class="benchmark">
+              <div class="bars"><i class="base" style="--height:64.71%"><b>64.7</b></i><i class="ask" style="--height:68.21%"><b>68.2</b></i></div>
+              <span>CulturalBench</span>
+            </div>
+            <div class="benchmark">
+              <div class="bars"><i class="base" style="--height:48.48%"><b>48.5</b></i><i class="ask" style="--height:57.16%"><b>57.2</b></i></div>
+              <span>Cultural<br>Commonsense</span>
+            </div>
+          </div>
+          <p class="chart-source">Accuracy (%). Information-seeking uses the best reported variant for each benchmark.</p>
+        </figure>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="closing-mark" aria-hidden="true">?</div>
+      <div class="reveal">
+        <p class="kicker">AACL 2026 · Main Conference</p>
+        <h2>What a model asks shapes what it can understand.</h2>
+        <div class="cta-row">
+          <a class="button button-dark" href="assets/paper.pdf">Read the paper <span aria-hidden="true">↗</span></a>
+          <a class="button button-light" href="https://github.com/MichiganNLP/CUEST">View the code <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>IQUEST</strong> · Information-seeking QUestion Evaluation across SocieTies</p>
+    <p>University of Michigan · University of Toronto · Vector Institute · MPI-IS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
